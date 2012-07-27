@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/anthony/sandbox/html5/projects/lighting_control'
+let g:netrw_dirhist_2='/Users/anthony/sandbox/html5/projects/lighting_control/css'
+let g:netrw_dirhist_3='/Users/anthony/sandbox/html5/projects/lighting_control'
+let g:netrw_dirhist_4='/Users/anthony/sandbox/html5/projects/lighting_control/css'
+let g:netrw_dirhist_5='/Users/anthony/sandbox/html5/projects/lighting_control/js'
