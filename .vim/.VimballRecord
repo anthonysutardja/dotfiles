@@ -1,2 +1,0 @@
-xmledit.vba: call delete('/Users/anthony/.vim/ftplugin/xml.vim')|call delete('/Users/anthony/.vim/doc/xml-plugin.txt')
-markdown-1.2.2.vba: call delete('/Users/anthony/.vim/ftdetect/markdown.vim')|call delete('/Users/anthony/.vim/snippets/markdown.snippets')|call delete('/Users/anthony/.vim/syntax/markdown.vim')
