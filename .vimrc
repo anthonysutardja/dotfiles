@@ -12,8 +12,10 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Raimondi/delimitMate'
 Bundle 'ctrlp.vim'
 Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'SuperTab'
+Bundle 'snipMate'
 
 "Set term color
 set t_Co=256
