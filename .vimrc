@@ -15,7 +15,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'SuperTab'
-Bundle 'snipMate'
 
 "Set term color
 set t_Co=256
@@ -84,7 +83,7 @@ set gcr=n:blinkon0
 set ignorecase
 set smartcase
 set incsearch
-"set hlsearch
+set hlsearch
 
 "Undo settings
 set undofile
@@ -94,6 +93,11 @@ set history=500
 let mapleader=';'
 nmap <Leader>g :GitGutterToggle<CR>
 nmap <Leader>n :set number! number?<CR>
+nmap <Leader>s :set spell! spell?<CR>
+nmap <Leader>d :NERDTree<CR>
+
+nmap <Leader>/ :nohl<CR>
+nmap <Leader>? :let @/ = ""<CR>
 
 "Edit current working directory.
 map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
@@ -129,3 +133,5 @@ let g:gitgutter_enabled = 0
 let g:syntastic_python_checkers = ['pep8']
 let g:syntastic_python_pep8_args='--ignore=E501,W191'
 let g:syntastic_auto_loc_list=1
+
+au FileType html let b:delimitMate_autoclose = 0 
