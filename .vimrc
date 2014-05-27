@@ -14,7 +14,7 @@ Bundle 'ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'SuperTab'
+Bundle 'Valloric/YouCompleteMe'
 
 "Set term color
 set t_Co=256
@@ -60,7 +60,7 @@ set wildmode=longest:list
 set wildignore=*.swp,*.pyc,*.class
 
 "Set 2 space tabs for these filetypes
-autocmd FileType css,html,xml,js,java,c setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType css,html,xml,js,c setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileTYpe python,c,java setlocal colorcolumn=80
 
 "79 char limit - color inclusive
@@ -93,8 +93,11 @@ set history=500
 let mapleader=';'
 nmap <Leader>g :GitGutterToggle<CR>
 nmap <Leader>n :set number! number?<CR>
-nmap <Leader>s :set spell! spell?<CR>
 nmap <Leader>d :NERDTree<CR>
+nmap <Leader>c :set cc=80<CR>
+nmap <Leader>s :SyntasticToggleMode<CR>
+
+nmap <Leader>S :set spell! spell?<CR>
 
 nmap <Leader>/ :nohl<CR>
 nmap <Leader>? :let @/ = ""<CR>
@@ -135,3 +138,4 @@ let g:syntastic_python_pep8_args='--ignore=E501,W191'
 let g:syntastic_auto_loc_list=1
 
 au FileType html let b:delimitMate_autoclose = 0 
+autocmd Filetype gitcommit setlocal spell textwidth=72
